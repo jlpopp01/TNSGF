@@ -1,22 +1,29 @@
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
+import FormGroup from 'react-bootstrap/FormGroup';
 
 
 
 function TForm () {
   return (
     <form>
-      <InputGroup className="userName">
-        <InputGroup.Prepend>
-          <InputGroup.Text id="userName">@</InputGroup.Text>
-        </InputGroup.Prepend>
-        <FormControl
-          placeholder="Username"
-          aria-label="Username"
-          aria-describedby="userName"
-        />
-      </InputGroup>
+      <label>
+        Name:
+        <input type="text" name="name" />
+      </label>
+      <br />
+      <label>
+        What Class Are You In?
+      </label>
+        <select>
+          <option value="front end">Front End</option>
+          <option value="javascript">Javascript</option>
+          <option value="python">Python</option>
+          <option value="c#">C#</option>
+        </select>
+      <br />
+      <input type="submit" value="Submit" />
     </form>
   )
 }
