@@ -2,7 +2,7 @@ The Not So Google Form!
 
 npm start
 
-React Base
+Create React App Base
 Uses bootstrap
 
 This can go two ways
