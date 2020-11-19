@@ -1,4 +1,4 @@
-# The Not So Google Form!
+# Random Beer Generator ala Punk API
 
 LOL
 
@@ -23,7 +23,7 @@ Once you hit npm start a browser window should pop up at http://localhost:3000
 
 ## Appreciation
 
-Thank you to Punk API for having such a friendly API! 
+Thank you to Punk API for having such a friendly API!
 
 Bless https://icons-for-free.com/mario+mario+bros+mario+world+mushroom+toad+videogame+icon-1320196400529338074/ for the Mario Icon
 
