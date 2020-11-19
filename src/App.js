@@ -43,7 +43,7 @@ class App extends Component {
         <p key={beer.id}>Beer Description: <br /> {beer.description}</p>
       )}
       {this.state.beers.map(beer =>
-        <img key={beer.id} src={beer.image_url} />
+        <Image key={beer.id} src={beer.image_url} />
       )}
       </div>
     );
