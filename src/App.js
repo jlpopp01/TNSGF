@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import axios from 'axios';
+import './App.css'
 
 
 
@@ -24,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="Beer-App">
-      <Jumbotron align="center">
+      <Jumbotron align="center" textColor="blue">
         {this.state.beers.map(beer =>
           <h1 key={beer.id}>{beer.name}</h1>
         )}
@@ -33,10 +34,16 @@ class App extends Component {
         )}
       </Jumbotron>
       {this.state.beers.map(beer =>
-        <p key={beer.id}>ABV: {beer.abv}</p>
+        <p key={beer.id} align="center">ABV: {beer.abv}</p>
+      )}
+      {this.state.beers.map(beer =>
+        <p key={beer.id}>Food Pairings: {beer.food_pairing.[0]}</p>
       )}
       {this.state.beers.map(beer =>
         <p key={beer.id}>Beer Description: <br /> {beer.description}</p>
+      )}
+      {this.state.beers.map(beer =>
+        <img key={beer.id} src={beer.image_url} />
       )}
       </div>
     );
