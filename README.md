@@ -10,9 +10,7 @@ Download the project to your computer and navigate over to that folder
 
 You will need node installed and your choice of package handler (I used npm)
 
-'''bash
 npm start
-bash'''
 
 ## What Next?
 
