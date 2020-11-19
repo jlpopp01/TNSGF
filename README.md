@@ -1,7 +1,5 @@
 # Random Beer Generator ala Punk API
 
-LOL
-
 Dear reader,
 
 This simple React App will present you with a random beer from Punk API (linked below)

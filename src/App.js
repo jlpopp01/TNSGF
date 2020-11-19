@@ -35,10 +35,12 @@ class App extends Component {
           <h2 key={beer.id}>{beer.tagline}</h2>
         )}
       </Jumbotron>
+      <h4 align="center">ABV </h4>
       {this.state.beers.map(beer =>
-        <p key={beer.id}>ABV: {beer.abv}</p>
+        <p key={beer.id} align="center">{beer.abv}</p>
       )}
-      <ul> Food Pairings:
+      <h3 className="food_pairing">Food Pairings <br /> </h3>
+      <ul>
       {this.state.beers.map(beer =>
         <li key={beer.id}>{beer.food_pairing.[0]}</li>
       )}
@@ -46,8 +48,9 @@ class App extends Component {
         <li key={beer.id}>{beer.food_pairing.[1]}</li>
       )}
       </ul>
+      <h3>Beer Description <br /> </h3>
       {this.state.beers.map(beer =>
-        <p key={beer.id}>Beer Description: <br /> {beer.description}</p>
+        <p key={beer.id}>{beer.description}</p>
       )}
       {this.state.beers.map(beer =>
         <Image key={beer.id} src={beer.image_url} />
