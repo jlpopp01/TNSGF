@@ -8,10 +8,12 @@ import './App.css'
 
 class App extends Component {
 
+/* Sets initial state */
   state = {
     beers: []
   }
 
+/* Retrieves data from API*/
   componentDidMount() {
     axios.get('https://api.punkapi.com/v2/beers/random')
       .then(res => {
@@ -20,7 +22,7 @@ class App extends Component {
       })
   }
 
-
+/*Presents random beer*/
 
   render() {
     return (
@@ -34,11 +36,16 @@ class App extends Component {
         )}
       </Jumbotron>
       {this.state.beers.map(beer =>
-        <p key={beer.id} align="center">ABV: {beer.abv}</p>
+        <p key={beer.id}>ABV: {beer.abv}</p>
+      )}
+      <ul> Food Pairings:
+      {this.state.beers.map(beer =>
+        <li key={beer.id}>{beer.food_pairing.[0]}</li>
       )}
       {this.state.beers.map(beer =>
-        <p key={beer.id}>Food Pairings: {beer.food_pairing.[0]}</p>
+        <li key={beer.id}>{beer.food_pairing.[1]}</li>
       )}
+      </ul>
       {this.state.beers.map(beer =>
         <p key={beer.id}>Beer Description: <br /> {beer.description}</p>
       )}

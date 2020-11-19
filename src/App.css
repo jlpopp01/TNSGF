@@ -8,6 +8,15 @@ img {
   width: 150px;
 }
 
-.Beer-App {
-  font-weight: bold;
+ul {
+  list-style: none;
+  align-self: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Beer-App {
+    font-weight: bold;
+    background-color: lightblue;
+  }
 }
