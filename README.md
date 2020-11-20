@@ -16,6 +16,8 @@ npm start
 
 Once you hit npm start a browser window should pop up at http://localhost:3000
 
+Refresh the page (command/ctrl + r) and you will be presented with a new beer.
+
 
 ## Appreciation
 
