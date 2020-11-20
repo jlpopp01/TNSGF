@@ -39,16 +39,16 @@ class App extends Component {
       {this.state.beers.map(beer =>
         <p key={beer.id} align="center">{beer.abv}</p>
       )}
-      <h3 className="food_pairing">Food Pairings <br /> </h3>
+      <h3 className="food_pairing" align="center">Food Pairings <br /> </h3>
       <ul>
       {this.state.beers.map(beer =>
-        <li key={beer.id}>{beer.food_pairing.[0]}</li>
+        <li key={beer.id} align="center">{beer.food_pairing.[0]}</li>
       )}
       {this.state.beers.map(beer =>
-        <li key={beer.id}>{beer.food_pairing.[1]}</li>
+        <li key={beer.id} align="center">{beer.food_pairing.[1]}</li>
       )}
       </ul>
-      <h3>Beer Description <br /> </h3>
+      <h3 align="center">Beer Description <br /> </h3>
       {this.state.beers.map(beer =>
         <p key={beer.id}>{beer.description}</p>
       )}
