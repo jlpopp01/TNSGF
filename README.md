@@ -2,7 +2,7 @@
 
 Dear reader,
 
-This simple React App will present you with a random beer from Punk API (linked below)
+This simple React App will present you with a random beer from Punk API (linked below). It uses Axios to help fetch the data. React-Bootstrap and some CSS to make it beautiful. 
 
 ## Installation
 
